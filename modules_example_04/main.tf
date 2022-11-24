@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region  = "eu-west-1"
+  region  = "us-east-1"
 }
 
 module "work_queue" {
@@ -15,4 +15,3 @@ output "work_queue" {
 output "work_queue_dead_letter_queue" {
   value = module.work_queue.dead_letter_queue
 }
-

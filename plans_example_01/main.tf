@@ -6,3 +6,6 @@ provider "aws" {
 resource "aws_sqs_queue" "test_queue" {
   name = "test_queue"
 }
+
+// $ terraform plan -out myplan
+// terraform apply myplan

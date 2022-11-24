@@ -4,4 +4,4 @@ instance_map = {
   prod = "t3.large"
 }
 
-environment_type = "dev"
+environment_type = "test"

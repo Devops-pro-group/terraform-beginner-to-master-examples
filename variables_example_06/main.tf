@@ -1,7 +1,7 @@
 
 variable "a" {
   type    = list(string)
-  default = ["foo", "bar", "baz"]
+  default = ["foo", "bar", "baz", "good", "ops" ]
 }
 
 output "a" {
@@ -9,7 +9,7 @@ output "a" {
 }
 
 output "b" {
-  value = element(var.a, 1)
+  value = element(var.a, 3)
 }
 
 output "c" {

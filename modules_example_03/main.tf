@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region  = "eu-west-1"
+  region  = "us-east-1"
 }
 
 resource "aws_security_group" "group_1" {
@@ -23,3 +23,9 @@ module "cross_talk_groups" {
   port              = 8500
   protocol          = "tcp"
 }
+
+git init
+git add .
+git commit -m "Push existing project to GitLab"
+git remote add source https://gitlab.com/cameronmcnz/example-website.git
+git push -u -f source master

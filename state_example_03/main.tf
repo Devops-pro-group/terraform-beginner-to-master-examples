@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region  = "eu-west-1"
+  region  = "us-east-1"
 }
 
 resource "aws_sqs_queue" "my_queue" {
